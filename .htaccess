@@ -1,0 +1,15 @@
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+
+    # Kama request tayari inaanzia /public, acha iende kama ilivyo
+    RewriteCond %{REQUEST_URI} ^/public/ [NC]
+    RewriteRule ^ - [L]
+
+    # Kama file au directory ipo moja kwa moja kwenye root, litumikie kama lilivyo
+    RewriteCond %{REQUEST_FILENAME} -f [OR]
+    RewriteCond %{REQUEST_FILENAME} -d
+    RewriteRule ^ - [L]
+
+    # Kitu chochote kingine kielekezwe ndani ya /public
+    RewriteRule ^(.*)$ public/$1 [L,QSA]
+</IfModule>

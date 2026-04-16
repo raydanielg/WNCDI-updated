@@ -1,0 +1,179 @@
+<script setup>
+import { Head } from '@inertiajs/vue3';
+import Header from '@/Components/Header.vue';
+import Footer from '@/Components/Footer.vue';
+</script>
+
+<template>
+    <Head title="Donate to WNCDi - Support the Fight Against NCDs" />
+    
+    <div class="min-h-screen bg-gray-50">
+        <Header />
+        
+        <main>
+            <!-- Hero section -->
+            <section class="relative h-80 bg-cover bg-center flex flex-col items-center justify-center" style="background-image: url('/img/wncdi/about-hero.jpeg');">
+                <div class="absolute inset-0 bg-gradient-to-b from-wncdi-dark/20 via-wncdi-primary/15 to-wncdi-primary/25 backdrop-blur-sm"></div>
+                <div class="relative z-10 text-center text-white px-4 mb-8">
+                    <h1 class="text-5xl sm:text-6xl font-extrabold tracking-tight">Support Our Mission</h1>
+                    <p class="text-xl mt-4">Help us fight against Non-Communicable Diseases</p>
+                </div>
+                
+                <!-- Breadcrumb -->
+                <nav class="relative z-10 bg-white/20 backdrop-blur-sm px-6 py-3 rounded-lg">
+                    <div class="flex items-center gap-2 text-sm text-white">
+                        <a href="/" class="hover:text-wncdi-light transition">Home</a>
+                        <span class="text-white/60">›</span>
+                        <span class="text-white/90 font-medium">Donate</span>
+                    </div>
+                </nav>
+            </section>
+
+            <!-- Donation content -->
+            <section class="py-20 px-4 sm:px-6 lg:px-8 bg-white">
+                <div class="max-w-6xl mx-auto">
+                    <!-- Introduction -->
+                    <div class="mb-16 text-center">
+                        <h2 class="text-3xl font-bold text-gray-900 mb-4">
+                            Make a Difference
+                        </h2>
+                        <p class="text-lg text-gray-600 max-w-3xl mx-auto">
+                            WNCDi has all energetic youths who only need support from sponsors and funders to help accomplish the NCDs fight goals. Running the community reaching activities with creating younger NCDs Champions needs financial and material support from anyone. Let's together join the efforts of creating the healthiest tomorrow of a less NCDs society by donating anything.
+                        </p>
+                    </div>
+
+                    <!-- Donation Methods -->
+                    <div class="grid md:grid-cols-2 gap-8 mb-16">
+                        <!-- Bank Transfer -->
+                        <div class="bg-gradient-to-br from-emerald-50 to-emerald-100 rounded-2xl p-8 border border-wncdi-light">
+                            <div class="flex items-center mb-6">
+                                <span class="material-icons text-4xl text-wncdi-accent mr-4">account_balance</span>
+                                <h3 class="text-2xl font-bold text-gray-900">Bank Transfer</h3>
+                            </div>
+                            
+                            <div class="space-y-4">
+                                <div>
+                                    <p class="text-sm text-gray-600 font-semibold mb-1">Bank Name</p>
+                                    <p class="text-lg text-gray-900 font-semibold">National Bank of Commerce (NBC)</p>
+                                </div>
+                                
+                                <div>
+                                    <p class="text-sm text-gray-600 font-semibold mb-1">Account Name</p>
+                                    <p class="text-lg text-gray-900 font-semibold">WITHOUT NON COMMUNICABLE DISEASES INITIATIVE (WNCDi)</p>
+                                </div>
+                                
+                                <div>
+                                    <p class="text-sm text-gray-600 font-semibold mb-1">Account Number</p>
+                                    <p class="text-xl text-wncdi-accent font-bold bg-white px-4 py-3 rounded-lg">041172000179</p>
+                                </div>
+                                
+                                <div class="bg-blue-50 border border-blue-200 rounded-lg p-4 mt-6">
+                                    <p class="text-sm text-blue-800">
+                                        <span class="font-semibold">Note:</span> Please include your name or organization name as reference when transferring funds so we can send you a receipt.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Mobile Money -->
+                        <div class="bg-gradient-to-br from-blue-50 to-blue-100 rounded-2xl p-8 border border-blue-200">
+                            <div class="flex items-center mb-6">
+                                <span class="material-icons text-4xl text-blue-600 mr-4">mobile_friendly</span>
+                                <h3 class="text-2xl font-bold text-gray-900">Mobile Money</h3>
+                            </div>
+                            
+                            <div class="space-y-4">
+                                <div class="bg-yellow-50 border border-yellow-200 rounded-lg p-4">
+                                    <p class="text-sm text-yellow-800">
+                                        <span class="font-semibold">Coming Soon:</span> Mobile money donation number will be provided soon. Check back regularly for updates.
+                                    </p>
+                                </div>
+
+                                <p class="text-gray-600 text-sm leading-relaxed">
+                                    We are working to set up mobile money donations through popular platforms in Tanzania to make giving even easier and more accessible.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Why Donate Section -->
+                    <div class="bg-wncdi-light rounded-2xl p-8 md:p-12 mb-16 border border-wncdi-light">
+                        <h3 class="text-2xl font-bold text-gray-900 mb-8">Why Support WNCDi?</h3>
+                        
+                        <div class="grid md:grid-cols-3 gap-8">
+                            <div class="flex gap-4">
+                                <div class="flex-shrink-0">
+                                    <span class="material-icons text-3xl text-wncdi-accent">school</span>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-gray-900 mb-2">Youth Education</h4>
+                                    <p class="text-gray-600 text-sm">We reach primary and secondary schools to educate younger generations about NCDs prevention.</p>
+                                </div>
+                            </div>
+
+                            <div class="flex gap-4">
+                                <div class="flex-shrink-0">
+                                    <span class="material-icons text-3xl text-wncdi-accent">groups</span>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-gray-900 mb-2">Community Impact</h4>
+                                    <p class="text-gray-600 text-sm">We organize community screening camps and health campaigns to provide vital health services.</p>
+                                </div>
+                            </div>
+
+                            <div class="flex gap-4">
+                                <div class="flex-shrink-0">
+                                    <span class="material-icons text-3xl text-wncdi-accent">health_and_safety</span>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-gray-900 mb-2">Health Advocacy</h4>
+                                    <p class="text-gray-600 text-sm">We provide incessant advocacy, campaigns, and education on NCDs prevention strategies.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Impact Section -->
+                    <div class="mb-16">
+                        <h3 class="text-2xl font-bold text-gray-900 mb-8 text-center">How Your Donation Helps</h3>
+                        
+                        <div class="grid sm:grid-cols-2 md:grid-cols-4 gap-6">
+                            <div class="bg-white rounded-lg border border-gray-200 p-6 text-center">
+                                <p class="text-3xl font-bold text-wncdi-accent mb-2">$50</p>
+                                <p class="text-gray-600 text-sm">Supports health education materials for schools</p>
+                            </div>
+
+                            <div class="bg-white rounded-lg border border-gray-200 p-6 text-center">
+                                <p class="text-3xl font-bold text-wncdi-accent mb-2">$100</p>
+                                <p class="text-gray-600 text-sm">Funds community awareness campaign</p>
+                            </div>
+
+                            <div class="bg-white rounded-lg border border-gray-200 p-6 text-center">
+                                <p class="text-3xl font-bold text-wncdi-accent mb-2">$250</p>
+                                <p class="text-gray-600 text-sm">Supports health screening camp</p>
+                            </div>
+
+                            <div class="bg-white rounded-lg border border-gray-200 p-6 text-center">
+                                <p class="text-3xl font-bold text-wncdi-accent mb-2">$500+</p>
+                                <p class="text-gray-600 text-sm">Sponsor comprehensive health initiative</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Call to Action -->
+                    <div class="bg-gradient-to-r from-wncdi-dark to-emerald-700 rounded-2xl p-8 md:p-12 text-center text-white">
+                        <h3 class="text-2xl font-bold mb-4">Thank You for Your Support</h3>
+                        <p class="text-lg mb-6">
+                            Every donation, no matter the size, makes a significant impact in our mission to create a society free from preventable NCDs.
+                        </p>
+                        <p class="text-emerald-100">
+                            Prior hearty thanks for supporting WNCDi
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <Footer />
+        </main>
+    </div>
+</template>
