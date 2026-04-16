@@ -217,7 +217,7 @@ const submit = () => {
                 <div class="flex items-center gap-4 text-xs text-emerald-50">
                     <div class="flex flex-col">
                         <span class="font-semibold">Global Network</span>
-                        <span>Members across Tanzania, UAE &amp; beyond.</span>
+                        <span>Members across Tanzania & beyond.</span>
                     </div>
                     <div class="h-10 w-px bg-wncdi-gold/40"></div>
                     <div class="flex flex-col">
