@@ -21,13 +21,17 @@ class RegisteredUserController extends Controller
      */
     public function create(): Response
     {
-        $setting = SecuritySetting::query()->first();
+        try {
+            $setting = SecuritySetting::query()->first();
 
-        if ($setting && ! $setting->allow_registration) {
-            return Inertia::render('Auth/Login', [
-                'canResetPassword' => \Illuminate\Support\Facades\Route::has('password.request'),
-                'status' => __('Registration is currently disabled.'),
-            ]);
+            if ($setting && ! $setting->allow_registration) {
+                return Inertia::render('Auth/Login', [
+                    'canResetPassword' => \Illuminate\Support\Facades\Route::has('password.request'),
+                    'status' => __('Registration is currently disabled.'),
+                ]);
+            }
+        } catch (\Exception $e) {
+            // If database is not set up, allow registration
         }
 
         return Inertia::render('Auth/Register');
@@ -40,10 +44,14 @@ class RegisteredUserController extends Controller
      */
     public function store(Request $request): RedirectResponse
     {
-        $setting = SecuritySetting::query()->first();
+        try {
+            $setting = SecuritySetting::query()->first();
 
-        if ($setting && ! $setting->allow_registration) {
-            return redirect()->route('login')->with('status', __('Registration is currently disabled.'));
+            if ($setting && ! $setting->allow_registration) {
+                return redirect()->route('login')->with('status', __('Registration is currently disabled.'));
+            }
+        } catch (\Exception $e) {
+            // If database is not set up, allow registration
         }
 
         $request->validate([

@@ -19,8 +19,13 @@ class AuthenticatedSessionController extends Controller
      */
     public function create(): Response
     {
-        $setting = SecuritySetting::query()->first();
-        $canRegisterSetting = ! $setting || $setting->allow_registration;
+        try {
+            $setting = SecuritySetting::query()->first();
+            $canRegisterSetting = ! $setting || $setting->allow_registration;
+        } catch (\Exception $e) {
+            // If database is not set up, allow registration
+            $canRegisterSetting = true;
+        }
 
         return Inertia::render('Auth/Login', [
             'canResetPassword' => Route::has('password.request'),

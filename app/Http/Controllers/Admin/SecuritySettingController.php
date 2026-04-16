@@ -25,7 +25,12 @@ class SecuritySettingController extends Controller
     {
         $this->ensureAdmin();
 
-        $settings = SecuritySetting::query()->first();
+        try {
+            $settings = SecuritySetting::query()->first();
+        } catch (\Exception $e) {
+            // If database is not set up, return null
+            $settings = null;
+        }
 
         return Inertia::render('Admin/Settings/Security', [
             'settings' => $settings,
@@ -43,12 +48,17 @@ class SecuritySettingController extends Controller
             'two_factor_enabled' => ['nullable', 'boolean'],
         ]);
 
-        $settings = SecuritySetting::query()->first() ?? new SecuritySetting();
-        $settings->fill($data);
-        $settings->allow_registration = (bool) ($data['allow_registration'] ?? true);
-        $settings->two_factor_enabled = (bool) ($data['two_factor_enabled'] ?? false);
-        $settings->save();
+        try {
+            $settings = SecuritySetting::query()->first() ?? new SecuritySetting();
+            $settings->fill($data);
+            $settings->allow_registration = (bool) ($data['allow_registration'] ?? true);
+            $settings->two_factor_enabled = (bool) ($data['two_factor_enabled'] ?? false);
+            $settings->save();
 
-        return back()->with('success', 'Security settings updated.');
+            return back()->with('success', 'Security settings updated.');
+        } catch (\Exception $e) {
+            // If database is not set up, just return back
+            return back()->with('error', 'Database not set up. Cannot save settings.');
+        }
     }
 }

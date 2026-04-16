@@ -16,14 +16,21 @@ class SuperAdminController extends Controller
             return redirect()->route('login');
         }
 
-        $setting = SecuritySetting::query()->first();
+        try {
+            $setting = SecuritySetting::query()->first();
 
-        if (! $setting) {
-            $setting = SecuritySetting::create([
-                'allow_registration' => true,
-                'password_min_length' => 8,
-                'login_rate_limit' => 5,
-                'two_factor_enabled' => false,
+            if (! $setting) {
+                $setting = SecuritySetting::create([
+                    'allow_registration' => true,
+                    'password_min_length' => 8,
+                    'login_rate_limit' => 5,
+                    'two_factor_enabled' => false,
+                    'system_enabled' => true,
+                ]);
+            }
+        } catch (\Exception $e) {
+            // If database is not set up, use default settings
+            $setting = new SecuritySetting([
                 'system_enabled' => true,
             ]);
         }
@@ -43,9 +50,14 @@ class SuperAdminController extends Controller
             'system_enabled' => ['required', 'boolean'],
         ]);
 
-        $setting = SecuritySetting::query()->first();
+        try {
+            $setting = SecuritySetting::query()->first();
 
-        if (! $setting) {
+            if (! $setting) {
+                $setting = new SecuritySetting();
+            }
+        } catch (\Exception $e) {
+            // If database is not set up, use default
             $setting = new SecuritySetting();
         }
 

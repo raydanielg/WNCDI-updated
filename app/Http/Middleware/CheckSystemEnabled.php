@@ -26,10 +26,15 @@ class CheckSystemEnabled
             return $next($request);
         }
 
-        $setting = SecuritySetting::query()->first();
+        try {
+            $setting = SecuritySetting::query()->first();
 
-        if ($setting && $setting->system_enabled === false) {
-            return redirect()->route('system.off');
+            if ($setting && $setting->system_enabled === false) {
+                return redirect()->route('system.off');
+            }
+        } catch (\Exception $e) {
+            // If database is not set up, allow the request to continue
+            // This is useful for development environments
         }
 
         return $next($request);

@@ -57,62 +57,79 @@ use App\Http\Controllers\SuperAdminController;
 Route::middleware(\App\Http\Middleware\CheckSystemEnabled::class)->group(function () {
 
 Route::get('/', function () {
-    $latestPosts = Post::query()
-        ->whereNotNull('published_at')
-        ->latest('published_at')
-        ->take(3)
-        ->get();
+    try {
+        $latestPosts = Post::query()
+            ->whereNotNull('published_at')
+            ->latest('published_at')
+            ->take(3)
+            ->get();
 
-    $testimonials = Testimonial::query()
-        ->latest('id')
-        ->take(6)
-        ->get();
+        $testimonials = Testimonial::query()
+            ->latest('id')
+            ->take(6)
+            ->get();
 
-    $teamMembers = TeamMember::query()
-        ->latest('id')
-        ->take(8)
-        ->get();
+        $teamMembers = TeamMember::query()
+            ->latest('id')
+            ->take(8)
+            ->get();
 
-    $memberOrganizations = MemberOrganization::query()
-        ->latest('id')
-        ->get();
+        $memberOrganizations = MemberOrganization::query()
+            ->latest('id')
+            ->get();
 
-    $aboutBlock = AboutBlock::query()->first();
+        $aboutBlock = AboutBlock::query()->first();
 
-    $focusAreas = FocusArea::query()
-        ->orderBy('sort_order')
-        ->orderBy('id')
-        ->get(['id', 'title', 'description', 'icon', 'sort_order']);
+        $focusAreas = FocusArea::query()
+            ->orderBy('sort_order')
+            ->orderBy('id')
+            ->get(['id', 'title', 'description', 'icon', 'sort_order']);
 
-    $heroSlides = HeroSlide::query()
-        ->where('is_active', true)
-        ->orderBy('sort_order')
-        ->orderBy('id')
-        ->get(['id', 'title', 'badge', 'description', 'sort_order', 'is_active']);
+        $heroSlides = HeroSlide::query()
+            ->where('is_active', true)
+            ->orderBy('sort_order')
+            ->orderBy('id')
+            ->get(['id', 'title', 'badge', 'description', 'sort_order', 'is_active']);
 
-    $notifications = Notification::query()
-        ->where('is_published', true)
-        ->orderBy('sort_order')
-        ->orderBy('id')
-        ->get(['id', 'title', 'url', 'sort_order']);
+        $notifications = Notification::query()
+            ->where('is_published', true)
+            ->orderBy('sort_order')
+            ->orderBy('id')
+            ->get(['id', 'title', 'url', 'sort_order']);
 
-    $footer = FooterSetting::query()->first();
+        $footer = FooterSetting::query()->first();
 
-    $securitySetting = SecuritySetting::query()->first();
-    $canRegisterSetting = ! $securitySetting || $securitySetting->allow_registration;
+        $securitySetting = SecuritySetting::query()->first();
+        $canRegisterSetting = ! $securitySetting || $securitySetting->allow_registration;
 
-    $programs = Program::query()
-        ->where('is_active', true)
-        ->orderBy('sort_order')
-        ->take(6)
-        ->get();
+        $programs = Program::query()
+            ->where('is_active', true)
+            ->orderBy('sort_order')
+            ->take(6)
+            ->get();
 
-    $objectives = Objective::query()
-        ->where('is_active', true)
-        ->orderBy('number')
-        ->get();
+        $objectives = Objective::query()
+            ->where('is_active', true)
+            ->orderBy('number')
+            ->get();
 
-    $generalSetting = GeneralSetting::query()->first();
+        $generalSetting = GeneralSetting::query()->first();
+    } catch (\Exception $e) {
+        // Handle database errors gracefully for development
+        $latestPosts = [];
+        $testimonials = [];
+        $teamMembers = [];
+        $memberOrganizations = [];
+        $aboutBlock = null;
+        $focusAreas = [];
+        $heroSlides = [];
+        $notifications = [];
+        $footer = null;
+        $canRegisterSetting = true;
+        $programs = [];
+        $objectives = [];
+        $generalSetting = null;
+    }
 
     return Inertia::render('Home', [
         'canLogin' => Route::has('login'),

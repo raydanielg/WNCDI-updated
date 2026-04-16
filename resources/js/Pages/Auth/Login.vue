@@ -80,14 +80,14 @@ const submit = () => {
             <div class="max-w-md w-full bg-white rounded-3xl shadow-xl border border-gray-100 p-8 sm:p-10">
                 <!-- Logo top -->
                 <div class="mb-4 flex justify-center">
-                    <img :src="'/tanford.logo.png'" alt="Tanford Logo" class="h-12 w-auto" />
+                    <img :src="'/img/WNCDiLogo.png'" alt="WNCDI Logo" class="h-12 w-auto" />
                 </div>
 
                 <!-- Welcome copy -->
                 <div class="mb-6 text-center">
-                    <h1 class="text-2xl sm:text-3xl font-bold text-gray-900 leading-tight">Welcome to Tanford</h1>
+                    <h1 class="text-2xl sm:text-3xl font-bold text-gray-900 leading-tight">Welcome to WNCDI</h1>
                     <p class="mt-1 text-sm text-gray-500">
-                        Sign in to access your trade &amp; logistics account.
+                        Sign in to access your WNCDI account.
                     </p>
                 </div>
 

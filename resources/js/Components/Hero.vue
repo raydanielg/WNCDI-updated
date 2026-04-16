@@ -105,16 +105,16 @@ const defaultBackgroundImages = [
 
 const fallbackSlides = [
     {
-        title: 'Without Non-Communicable Diseases Initiative',
-        badge: 'Becoming Healthier Together',
+        title: 'WNCDi Platform',
+        badge: 'Empowering Youth Health & Community Development',
         description:
-            'Join us in fighting against Non-Communicable Diseases through advocacy, education, and community engagement.'
+            'Join our comprehensive wellness and educational initiatives focused on diabetes awareness, health education, and community empowerment. Discover programs, resources, and opportunities to make a real difference in people\'s lives.'
     },
     {
-        title: 'Empower Your Global Trade Network',
-        badge: 'Connecting Global Trade to Africa\'s Heart',
+        title: 'Fighting Non-Communicable Diseases',
+        badge: 'Becoming Healthier Together',
         description:
-            'Join a powerful network that simplifies logistics, reduces risk, and unlocks new opportunities across borders.'
+            'Join us in fighting against Non-Communicable Diseases through advocacy, education, and community engagement with our global network.'
     }
 ];
 

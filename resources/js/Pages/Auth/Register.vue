@@ -28,14 +28,14 @@ const submit = () => {
             <div class="max-w-md w-full bg-white rounded-3xl shadow-xl border border-gray-100 p-8 sm:p-10">
                 <!-- Logo top -->
                 <div class="mb-4 flex justify-center">
-                    <img src="/tanford.logo.png" alt="Tanford Logo" class="h-12 w-auto" />
+                    <img src="/img/WNCDiLogo.png" alt="WNCDI Logo" class="h-12 w-auto" />
                 </div>
 
                 <!-- Title + description -->
                 <div class="mb-6 text-center">
-                    <h1 class="text-2xl sm:text-3xl font-bold text-gray-900 leading-tight">Create your Tanford account</h1>
+                    <h1 class="text-2xl sm:text-3xl font-bold text-gray-900 leading-tight">Create your WNCDI account</h1>
                     <p class="mt-1 text-sm text-gray-500">
-                        Join the Tanford network to access forums, events, and logistics opportunities.
+                        Join WNCDI to access exclusive content, events, and networking opportunities.
                     </p>
                 </div>
 
@@ -135,14 +135,12 @@ const submit = () => {
         <!-- Right: Info panel -->
         <div class="hidden lg:flex flex-1 bg-gradient-to-br from-slate-900 via-wncdi-primary to-blue-600 text-white items-center justify-center px-12">
             <div class="max-w-md">
-                <h2 class="text-3xl font-extrabold mb-4 leading-tight">Become part of the Tanford network.</h2>
+                <h2 class="text-3xl font-extrabold mb-4 leading-tight">Become part of the WNCDI community.</h2>
                 <p class="text-sm text-emerald-50 mb-6">
-                    Register as a member to stay informed about forums, events, and logistics opportunities connecting
-                    Tanzania with the global market.
+                    Register as a member to access exclusive content, connect with industry professionals, and stay updated on WNCDI initiatives.
                 </p>
                 <p class="text-xs text-emerald-100">
-                    Your account gives you faster registration, personalized communication, and access to exclusive
-                    partner content.
+                    Your account gives you faster registration, personalized communication, and access to exclusive member benefits and resources.
                 </p>
             </div>
         </div>

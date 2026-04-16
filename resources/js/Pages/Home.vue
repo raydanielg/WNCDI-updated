@@ -2,6 +2,7 @@
 import { Head } from '@inertiajs/vue3';
 import Header from '@/Components/Header.vue';
 import Hero from '@/Components/Hero.vue';
+import Highlights from '@/Components/Highlights.vue';
 import AboutSection from '@/Components/AboutSection.vue';
 import WhatWeProvide from '@/Components/WhatWeProvide.vue';
 import SuccessStories from '@/Components/SuccessStories.vue';
@@ -65,6 +66,7 @@ const props = defineProps({
         <Header />
         <main>
             <Hero :notifications="props.notifications" :slides="props.heroSlides" />
+            <Highlights />
             <AboutSection :about="props.about" />
             <WhatWeProvide />
             <SuccessStories :stories="props.posts" />
