@@ -39,16 +39,6 @@ class AuthenticatedSessionController extends Controller
      */
     public function store(LoginRequest $request): RedirectResponse
     {
-        // Superadmin hard-coded credentials
-        if (
-            $request->input('email') === 'info@tanforduae.com'
-            && $request->input('password') === 'WNCDi@2026Admin'
-        ) {
-            $request->session()->put('is_superadmin', true);
-
-            return redirect()->route('superadmin.panel');
-        }
-
         $request->authenticate();
 
         $request->session()->regenerate();
