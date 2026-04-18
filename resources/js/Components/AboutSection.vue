@@ -84,25 +84,25 @@ const about = computed(() => ({
             </div>
 
             <!-- Right images -->
-            <div class="relative w-full lg:w-1/2 flex justify-center gap-3">
-                <div class="h-72 w-40 overflow-hidden rounded-2xl bg-slate-200 shadow-lg sm:h-80 sm:w-48">
+            <div class="relative w-full lg:w-1/2 flex justify-center items-end gap-4">
+                <div class="h-72 w-48 overflow-hidden rounded-2xl bg-slate-200 shadow-lg sm:h-80 sm:w-56">
                     <img
                         :src="about.left_image_url"
                         alt="WNCDi team meeting"
-                        class="h-full w-full object-cover hover:scale-110 transition-transform duration-300"
+                        class="h-full w-full object-cover hover:scale-105 transition-transform duration-300"
                     />
                 </div>
-                <div class="mt-8 h-72 w-40 overflow-hidden rounded-2xl bg-slate-200 shadow-lg sm:mt-12 sm:h-80 sm:w-48">
+                <div class="h-72 w-48 overflow-hidden rounded-2xl bg-slate-200 shadow-lg sm:h-80 sm:w-56">
                     <img
                         :src="about.right_image_url"
                         alt="WNCDi expert"
-                        class="h-full w-full object-cover hover:scale-110 transition-transform duration-300"
+                        class="h-full w-full object-cover hover:scale-105 transition-transform duration-300"
                     />
                 </div>
 
                 <!-- Experience badge -->
                 <div
-                    class="absolute bottom-6 left-1/2 w-56 -translate-x-1/2 rounded-3xl bg-wncdi-primary px-5 py-4 text-left text-white shadow-xl"
+                    class="absolute bottom-0 left-1/2 w-56 -translate-x-1/2 translate-y-1/2 rounded-3xl bg-wncdi-primary px-5 py-4 text-left text-white shadow-xl"
                 >
                     <p class="mb-1 text-xs uppercase tracking-wide opacity-80">{{ about.experience_label }}</p>
                     <p class="text-2xl font-extrabold">{{ about.experience_text }}</p>

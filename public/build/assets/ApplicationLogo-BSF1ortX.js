@@ -1,0 +1,1 @@
+import{_ as o}from"./_plugin-vue_export-helper-DlAUqK2U.js";import{c,o as t}from"./app-Dn3WzXBf.js";const e={},n={src:"/img/WNCDiLogo.png",alt:"WNCDi logo",class:"h-24 w-24 object-contain drop-shadow-xl"};function r(s,a){return t(),c("img",n)}const p=o(e,[["render",r]]);export{p as A};
