@@ -18,7 +18,7 @@ export default {
             colors: {
                 // Custom vibrant palette for WNCDi
                 'wncdi-primary': '#640048',      // Deep purple - primary actions & brand color
-                'wncdi-accent': '#c2185b',       // Dark pink - hover effects & highlights
+                'wncdi-accent': '#3d1732',       // Dark purple/maroon - hover effects & highlights
                 'wncdi-gold': '#f89107',         // Orange - badges & special highlights
                 'wncdi-dark': '#3d0028',         // Dark purple - contrast & text
                 'wncdi-light': '#fff5f0',        // Light cream - backgrounds
