@@ -17,12 +17,12 @@ export default {
             },
             colors: {
                 // Custom vibrant palette for WNCDi
-                'wncdi-primary': '#0204f9',      // Deep blue - primary actions & brand color
-                'wncdi-accent': '#ff06bc',       // Magenta/Pink - hover effects & highlights
-                'wncdi-gold': '#fdd011',         // Bright yellow - badges & special highlights
-                'wncdi-dark': '#010057',         // Very dark blue - contrast & text
-                'wncdi-light': '#f5f3ff',        // Very light lavender - backgrounds
-                'wncdi-secondary': '#fdd011',    // Yellow for secondary actions
+                'wncdi-primary': '#640048',      // Deep purple - primary actions & brand color
+                'wncdi-accent': '#f89107',       // Orange - hover effects & highlights
+                'wncdi-gold': '#f89107',         // Orange - badges & special highlights
+                'wncdi-dark': '#3d0028',         // Dark purple - contrast & text
+                'wncdi-light': '#fff5f0',        // Light cream - backgrounds
+                'wncdi-secondary': '#f89107',    // Orange for secondary actions
             },
         },
     },
