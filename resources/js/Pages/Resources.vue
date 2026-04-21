@@ -85,7 +85,7 @@ import Footer from '@/Components/Footer.vue';
                     <div class="mt-16 bg-gray-50 rounded-lg p-8">
                         <h3 class="text-2xl font-bold text-gray-900 mb-4">Member-Only Resources</h3>
                         <p class="text-gray-600 mb-6">
-                            TANFORD members have exclusive access to premium resources, including advanced training materials, market research reports, and networking directories.
+                            Members have exclusive access to premium resources, including advanced training materials, market research reports, and networking directories.
                         </p>
                         <a
                             href="/contact"

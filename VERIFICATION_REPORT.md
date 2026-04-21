@@ -284,7 +284,7 @@ POST /admin/settings/general           → Update settings
 - Scope: Single organization only
 
 ### Notes
-- Admin user credentials: admin@tanford.net / 12345678
+- Admin user credentials: Update with your own credentials
 - Slugs auto-generated from program names
 - Sort order affects display sequences
 - Active/inactive toggle controls visibility

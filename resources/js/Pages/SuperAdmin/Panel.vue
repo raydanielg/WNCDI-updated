@@ -37,7 +37,7 @@ const submit = () => {
                     </p>
                 </div>
                 <div class="text-right text-[11px] text-gray-400">
-                    <div class="font-mono">info@tanforduae.com</div>
+                    <div class="font-mono">support@wncdi.local</div>
                     <div class="font-mono">**********</div>
                 </div>
             </div>

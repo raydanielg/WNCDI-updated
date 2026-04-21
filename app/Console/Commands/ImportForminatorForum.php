@@ -12,7 +12,7 @@ class ImportForminatorForum extends Command
      *
      * @var string
      */
-    protected $signature = 'import:forminator-forum {path : Path to tanfordu_wp115.json export} {--form-id=195 : Forminator form_id to import}';
+    protected $signature = 'import:forminator-forum {path : Path to WordPress export JSON} {--form-id=195 : Forminator form_id to import}';
 
     /**
      * The console command description.

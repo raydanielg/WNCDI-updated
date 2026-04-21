@@ -67,8 +67,8 @@ class AboutBlockController extends Controller
             'cta_url' => ['nullable', 'string', 'max:255'],
             'experience_label' => ['nullable', 'string', 'max:255'],
             'experience_text' => ['nullable', 'string', 'max:255'],
-            'left_image' => ['nullable', 'image', 'max:4096'],
-            'right_image' => ['nullable', 'image', 'max:4096'],
+            'left_image' => ['nullable', 'file', 'max:10240', 'mimetypes:image/jpeg,image/png,image/webp,image/svg+xml,image/gif,image/bmp,image/tiff,image/x-tiff,image/heic'],
+            'right_image' => ['nullable', 'file', 'max:10240', 'mimetypes:image/jpeg,image/png,image/webp,image/svg+xml,image/gif,image/bmp,image/tiff,image/x-tiff,image/heic'],
         ]);
 
         if ($request->hasFile('left_image')) {

@@ -236,7 +236,7 @@ php artisan db:seed --class=WNCDiSeeder
 
 ## Admin User Credentials
 ```
-Email: admin@tanford.net
+Email: admin@wncdi.local
 Password: 12345678
 ```
 

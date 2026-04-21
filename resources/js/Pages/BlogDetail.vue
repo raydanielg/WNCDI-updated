@@ -46,7 +46,7 @@ const galleryImages = props.galleryImages;
                 </div>
                 <nav class="relative z-10 bg-white/20 backdrop-blur-sm px-6 py-3 rounded-lg">
                     <div class="flex items-center gap-2 text-sm text-white">
-                        <a href="/" class="hover:text-wncdi-light transition">Tanford</a>
+                        <a href="/" class="hover:text-wncdi-light transition">Home</a>
                         <span class="text-white/60">›</span>
                         <a href="/blog" class="hover:text-wncdi-light transition">Blog</a>
                         <span class="text-white/60">›</span>

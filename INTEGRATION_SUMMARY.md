@@ -134,7 +134,7 @@ Populates database with:
    - Added 9 new routes
 
 📝 config/app.php
-   - Changed APP_NAME from 'Tanford' to 'WNCDi'
+   - Changed APP_NAME from 'WNCDi' to 'WNCDi'
 
 📝 database/seeders/DatabaseSeeder.php
    - Added WNCDiSeeder call
@@ -212,7 +212,7 @@ URL: http://localhost/admin/programs
      http://localhost/admin/objectives
      http://localhost/admin/settings/general
 
-Login: admin@tanford.net / 12345678 (default)
+Login: Use your admin credentials
 ```
 
 ---
@@ -322,7 +322,7 @@ GeneralSetting → has Organization metadata
 ### Authentication
 - Admin routes protected by role='admin'
 - Standard Laravel authentication
-- Existing admin user: admin@tanford.net
+- Use your admin credentials
 
 ### Image Handling
 - Uploaded to: `storage/app/public/programs/` and `storage/app/public/objectives/`
@@ -350,8 +350,8 @@ Admin URLs:
 
 ### Important Credentials
 ```
-Email: admin@tanford.net
-Password: 12345678
+Email: (your admin email)
+Password: (your admin password)
 ```
 
 ### Important Directories

@@ -31,7 +31,7 @@ const refresh = () => {
             <div class="flex items-center justify-between">
                 <div>
                     <h1 class="text-lg font-semibold text-gray-900">Site overview</h1>
-                    <p class="text-xs text-gray-500">High-level summary of Tanford site activity and key forms.</p>
+                    <p class="text-xs text-gray-500">High-level summary of site activity and key forms.</p>
                 </div>
                 <button
                     type="button"

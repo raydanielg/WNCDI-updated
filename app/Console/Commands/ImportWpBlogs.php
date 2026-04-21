@@ -8,7 +8,7 @@ use Illuminate\Support\Str;
 
 class ImportWpBlogs extends Command
 {
-    protected $signature = 'import:wp-blogs {path : Path to tanfordu_wp115.json export}';
+    protected $signature = 'import:wp-blogs {path : Path to WordPress export JSON}';
 
     protected $description = 'Import WordPress blog posts (wpgs_posts, type=post) into Laravel Post model';
 

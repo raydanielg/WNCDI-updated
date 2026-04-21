@@ -28,15 +28,15 @@ Laravel has the most extensive and thorough [documentation](https://laravel.com/
 ## Importing legacy data from WordPress export
 
 Some data (forum registrations, UAE Residents, and blog posts) can be imported from
-the old WordPress database export JSON file (`tanfordu_wp115.json`).
+a WordPress database export JSON file.
 
 Make sure you run these commands from the project root and that the path to the JSON
-file is correct for your machine (update the drive/path if needed).
+file is correct for your machine.
 
-### 1. Import forum registrations (Tanzania Global Logistics Forum 2025)
+### 1. Import forum registrations
 
 ```bash
-php artisan import:forminator-forum "e:\COMPANIES TASKS\Tanford\tanfordu_wp115.json" --form-id=195
+php artisan import:forminator-forum "/path/to/export.json" --form-id=195
 ```
 
 - Imports Forminator entries for form_id `195` into the `forum_registrations` table.
@@ -46,7 +46,7 @@ php artisan import:forminator-forum "e:\COMPANIES TASKS\Tanford\tanfordu_wp115.j
 ### 2. Import UAE Residents registrations
 
 ```bash
-php artisan import:forminator-uae "e:\COMPANIES TASKS\Tanford\tanfordu_wp115.json" --form-id=325
+php artisan import:forminator-uae "/path/to/export.json" --form-id=325
 ```
 
 - Imports Forminator entries for form_id `325` into the `uae_residents` table.
@@ -57,7 +57,7 @@ php artisan import:forminator-uae "e:\COMPANIES TASKS\Tanford\tanfordu_wp115.jso
 ### 3. Import WordPress blog posts
 
 ```bash
-php artisan import:wp-blogs "e:\COMPANIES TASKS\Tanford\tanfordu_wp115.json"
+php artisan import:wp-blogs "/path/to/export.json"
 ```
 
 - Reads the `wpgs_posts` table from the JSON export.

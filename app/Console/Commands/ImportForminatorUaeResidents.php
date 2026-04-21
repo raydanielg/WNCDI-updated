@@ -7,7 +7,7 @@ use Illuminate\Console\Command;
 
 class ImportForminatorUaeResidents extends Command
 {
-    protected $signature = 'import:forminator-uae {path : Path to tanfordu_wp115.json export} {--form-id=325 : Forminator form_id to import}';
+    protected $signature = 'import:forminator-uae {path : Path to WordPress export JSON} {--form-id=325 : Forminator form_id to import}';
 
     protected $description = 'Import Forminator UAE Residents registrations from a WordPress JSON export into uae_residents table';
 

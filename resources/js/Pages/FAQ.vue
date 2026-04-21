@@ -94,7 +94,7 @@ const toggleFAQ = (index) => {
                     <div class="mb-16 text-center">
                         <h2 class="text-3xl font-bold mb-4 text-gray-900">Frequently Asked Questions</h2>
                         <p class="text-gray-600 max-w-2xl mx-auto">
-                            Find answers to common questions about TANFORD, membership, events, and more.
+                            Find answers to common questions about membership, events, and more.
                         </p>
                     </div>
 
@@ -147,9 +147,9 @@ const toggleFAQ = (index) => {
                     <div class="grid md:grid-cols-2 gap-12 items-center">
                         <!-- Left: App info -->
                         <div>
-                            <h2 class="text-4xl font-bold mb-6 text-gray-900">TANFORD Mobile App</h2>
+                            <h2 class="text-4xl font-bold mb-6 text-gray-900">Mobile App</h2>
                             <p class="text-lg text-gray-600 mb-6 leading-relaxed">
-                                Stay connected with TANFORD on the go. Our mobile app brings the power of networking, event registration, and professional development to your fingertips.
+                                Stay connected on the go. Our mobile app brings the power of networking, event registration, and professional development to your fingertips.
                             </p>
                             
                             <div class="space-y-4 mb-8">
@@ -244,7 +244,7 @@ const toggleFAQ = (index) => {
                 <div class="mx-auto max-w-2xl text-center">
                     <h3 class="text-2xl font-bold mb-4 text-gray-900">Get App Launch Notifications</h3>
                     <p class="text-gray-600 mb-6">
-                        Be the first to know when the TANFORD mobile app launches for iOS and Android.
+                        Be the first to know when the mobile app launches for iOS and Android.
                     </p>
                     <form class="flex flex-col sm:flex-row gap-3">
                         <input

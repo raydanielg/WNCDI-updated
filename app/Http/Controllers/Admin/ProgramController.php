@@ -45,7 +45,7 @@ class ProgramController extends Controller
             'short_description' => ['required', 'string', 'max:500'],
             'description' => ['required', 'string'],
             'icon_url' => ['nullable', 'string'],
-            'image' => ['nullable', 'image', 'max:4096'],
+            'image' => ['nullable', 'file', 'max:10240', 'mimetypes:image/jpeg,image/png,image/webp,image/svg+xml,image/heic'],
             'sort_order' => ['nullable', 'integer', 'min:0'],
             'is_active' => ['nullable', 'boolean'],
         ]);
@@ -73,7 +73,7 @@ class ProgramController extends Controller
             'short_description' => ['required', 'string', 'max:500'],
             'description' => ['required', 'string'],
             'icon_url' => ['nullable', 'string'],
-            'image' => ['nullable', 'image', 'max:4096'],
+            'image' => ['nullable', 'file', 'max:10240', 'mimetypes:image/jpeg,image/png,image/webp,image/svg+xml,image/heic'],
             'sort_order' => ['nullable', 'integer', 'min:0'],
             'is_active' => ['nullable', 'boolean'],
         ]);

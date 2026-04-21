@@ -21,7 +21,7 @@
 - [ ] Place objective images in `/img/wncdi/objectives/`
 
 ## Admin Panel Verification
-- [ ] Login to admin panel with: admin@tanford.net / 12345678
+- [ ] Login to admin panel with your admin credentials
 - [ ] Go to `/admin/programs` - should list 6 programs
 - [ ] Go to `/admin/objectives` - should list 7 objectives  
 - [ ] Go to `/admin/settings/general` - check new WNCDi fields populated

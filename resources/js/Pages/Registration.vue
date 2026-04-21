@@ -84,7 +84,7 @@ const handleSubmit = () => {
                     <!-- Breadcrumb -->
                     <nav class="mb-8">
                         <div class="flex items-center gap-2 text-sm text-gray-600">
-                            <a href="/" class="hover:text-wncdi-accent transition">Tanford</a>
+                            <a href="/" class="hover:text-wncdi-accent transition">Home</a>
                             <span class="text-gray-400">›</span>
                             <span class="text-gray-900 font-medium">Tanzania Global Logistics Forum 2025 Registration Form</span>
                         </div>

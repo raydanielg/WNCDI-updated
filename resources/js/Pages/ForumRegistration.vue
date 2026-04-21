@@ -138,7 +138,7 @@ const handleSubmit = () => {
                     <!-- Breadcrumb -->
                     <nav class="mb-8">
                         <div class="flex items-center gap-2 text-sm text-gray-600">
-                            <a href="/" class="hover:text-wncdi-accent transition">Tanford</a>
+                            <a href="/" class="hover:text-wncdi-accent transition">Home</a>
                             <span class="text-gray-400">›</span>
                             <span class="text-gray-900 font-medium">Tanzania Global Logistics Forum 2025 Registration Form</span>
                         </div>
@@ -169,7 +169,7 @@ const handleSubmit = () => {
                                         <p class="text-sm text-gray-700 leading-relaxed">
                                             <span class="font-semibold">Dubai, UAE</span>
                                             <span class="mx-1">&mdash;</span>
-                                            The organizing committee of the Tanzania Global Trade & Logistics Forum 2025 has officially announced that online registration is now open for participants and exhibitors ahead of the highly anticipated event, scheduled to take place on 13th&ndash;14th February 2026, at the iconic Shangri-La Hotel in Dubai. Hosted by TANFORD...
+                                            Online registration is now open for participants and exhibitors ahead of the highly anticipated Tanzania Global Trade & Logistics Forum 2025, scheduled to take place on 13th–14th February 2026, at the iconic Shangri-La Hotel in Dubai...
                                         </p>
                                     </div>
                                 </div>

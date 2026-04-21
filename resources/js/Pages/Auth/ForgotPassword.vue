@@ -66,14 +66,14 @@ watch(
             <div class="max-w-md w-full bg-white rounded-3xl shadow-xl border border-gray-100 p-8 sm:p-10">
                 <!-- Logo top -->
                 <div class="mb-4 flex justify-center">
-                    <img src="/tanford.logo.png" alt="Tanford Logo" class="h-12 w-auto" />
+                    <img src="/wncdi-logo.png" alt="Logo" class="h-12 w-auto" />
                 </div>
 
                 <!-- Title + description -->
                 <div class="mb-6 text-center">
                     <h1 class="text-2xl sm:text-3xl font-bold text-gray-900 leading-tight">Reset your password</h1>
                     <p class="mt-1 text-sm text-gray-500">
-                        Enter the email you use with Tanford and we will send you a secure link to reset your password.
+                        Enter the email you use with us and we will send you a secure link to reset your password.
                     </p>
                 </div>
 
@@ -122,7 +122,7 @@ watch(
                 </p>
                 <p class="text-xs text-emerald-100">
                     For security reasons, reset links expire after a short period. If you need assistance, please
-                    contact the Tanford support team.
+                    contact the support team.
                 </p>
             </div>
         </div>
