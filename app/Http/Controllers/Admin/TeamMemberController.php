@@ -36,6 +36,8 @@ class TeamMemberController extends Controller
                 'photo_url',
                 'facebook_url',
                 'twitter_url',
+                'instagram_url',
+                'linkedin_url',
                 'created_at',
             ]);
 
@@ -56,20 +58,27 @@ class TeamMemberController extends Controller
             'photo_url' => ['nullable', 'string', 'max:255'],
             'facebook_url' => ['nullable', 'string', 'max:255'],
             'twitter_url' => ['nullable', 'string', 'max:255'],
+            'instagram_url' => ['nullable', 'string', 'max:255'],
+            'linkedin_url' => ['nullable', 'string', 'max:255'],
         ]);
 
         $memberData = [
             'name' => $data['name'],
             'title' => $data['title'] ?? null,
             'bio' => $data['bio'] ?? null,
-            'photo_url' => $data['photo_url'] ?? null,
             'facebook_url' => $data['facebook_url'] ?? null,
             'twitter_url' => $data['twitter_url'] ?? null,
+            'instagram_url' => $data['instagram_url'] ?? null,
+            'linkedin_url' => $data['linkedin_url'] ?? null,
         ];
 
+        // Handle file upload - store and get URL
         if ($request->hasFile('photo')) {
             $path = $request->file('photo')->store('team', 'public');
             $memberData['photo_url'] = Storage::disk('public')->url($path);
+        } elseif (!empty($data['photo_url'])) {
+            // Use provided URL only if no file uploaded and URL is provided
+            $memberData['photo_url'] = $data['photo_url'];
         }
 
         TeamMember::create($memberData);
@@ -89,21 +98,29 @@ class TeamMemberController extends Controller
             'photo_url' => ['nullable', 'string', 'max:255'],
             'facebook_url' => ['nullable', 'string', 'max:255'],
             'twitter_url' => ['nullable', 'string', 'max:255'],
+            'instagram_url' => ['nullable', 'string', 'max:255'],
+            'linkedin_url' => ['nullable', 'string', 'max:255'],
         ]);
 
         $updateData = [
             'name' => $data['name'],
             'title' => $data['title'] ?? null,
             'bio' => $data['bio'] ?? null,
-            'photo_url' => $data['photo_url'] ?? null,
             'facebook_url' => $data['facebook_url'] ?? null,
             'twitter_url' => $data['twitter_url'] ?? null,
+            'instagram_url' => $data['instagram_url'] ?? null,
+            'linkedin_url' => $data['linkedin_url'] ?? null,
         ];
 
+        // Handle file upload - store and get URL
         if ($request->hasFile('photo')) {
             $path = $request->file('photo')->store('team', 'public');
             $updateData['photo_url'] = Storage::disk('public')->url($path);
+        } elseif (!empty($data['photo_url'])) {
+            // Use provided URL only if no file uploaded and URL is provided
+            $updateData['photo_url'] = $data['photo_url'];
         }
+        // If neither file nor URL provided, don't update photo_url
 
         $teamMember->update($updateData);
 
