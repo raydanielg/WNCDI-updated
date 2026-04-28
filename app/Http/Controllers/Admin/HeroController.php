@@ -44,7 +44,7 @@ class HeroController extends Controller
             'title' => ['required', 'string', 'max:255'],
             'badge' => ['nullable', 'string', 'max:255'],
             'description' => ['nullable', 'string'],
-            'image' => ['nullable', 'file', 'max:15360', 'mimetypes:image/jpeg,image/png,image/webp,image/svg+xml,image/heic'],
+            'image' => ['nullable', 'image', 'max:512000'],
             'sort_order' => ['nullable', 'integer', 'min:1'],
             'is_active' => ['nullable', 'boolean'],
         ]);
@@ -75,7 +75,7 @@ class HeroController extends Controller
             'title' => ['required', 'string', 'max:255'],
             'badge' => ['nullable', 'string', 'max:255'],
             'description' => ['nullable', 'string'],
-            'image' => ['nullable', 'file', 'max:15360', 'mimetypes:image/jpeg,image/png,image/webp,image/svg+xml,image/heic'],
+            'image' => ['nullable', 'image', 'max:512000'],
             'sort_order' => ['nullable', 'integer', 'min:1'],
             'is_active' => ['nullable', 'boolean'],
         ]);

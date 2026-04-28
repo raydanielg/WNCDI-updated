@@ -43,7 +43,7 @@ class ServiceController extends Controller
             'title' => ['required', 'string', 'max:255'],
             'short_description' => ['required', 'string', 'max:255'],
             'body' => ['required', 'string'],
-            'image' => ['nullable', 'file', 'max:10240', 'mimetypes:image/jpeg,image/png,image/webp,image/svg+xml,image/gif,image/bmp,image/tiff,image/x-tiff,image/heic'],
+            'image' => ['nullable', 'image', 'max:512000'],
         ]);
 
         if ($request->hasFile('image')) {
@@ -80,7 +80,7 @@ class ServiceController extends Controller
             'title' => ['required', 'string', 'max:255'],
             'short_description' => ['required', 'string', 'max:255'],
             'body' => ['required', 'string'],
-            'image' => ['nullable', 'file', 'max:10240', 'mimetypes:image/jpeg,image/png,image/webp,image/svg+xml,image/gif,image/bmp,image/tiff,image/x-tiff,image/heic'],
+            'image' => ['nullable', 'image', 'max:512000'],
         ]);
 
         if ($request->hasFile('image')) {

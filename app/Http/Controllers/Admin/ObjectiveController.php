@@ -44,7 +44,7 @@ class ObjectiveController extends Controller
             'number' => ['required', 'integer', 'min:1', 'max:10'],
             'title' => ['required', 'string', 'max:255'],
             'description' => ['required', 'string'],
-            'image' => ['nullable', 'file', 'max:10240', 'mimetypes:image/jpeg,image/png,image/webp,image/svg+xml,image/heic'],
+            'image' => ['nullable', 'image', 'max:512000'],
             'sort_order' => ['nullable', 'integer', 'min:0'],
             'is_active' => ['nullable', 'boolean'],
         ]);
@@ -71,7 +71,7 @@ class ObjectiveController extends Controller
             'number' => ['required', 'integer', 'min:1', 'max:10'],
             'title' => ['required', 'string', 'max:255'],
             'description' => ['required', 'string'],
-            'image' => ['nullable', 'image', 'max:4096'],
+            'image' => ['nullable', 'image', 'max:512000'],
             'sort_order' => ['nullable', 'integer', 'min:0'],
             'is_active' => ['nullable', 'boolean'],
         ]);

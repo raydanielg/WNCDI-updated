@@ -42,7 +42,7 @@ class MediaItemController extends Controller
         $data = $request->validate([
             'title' => ['required', 'string', 'max:255'],
             'description' => ['nullable', 'string'],
-            'file' => ['required', 'file', 'max:51200', 'mimetypes:image/jpeg,image/png,image/webp,image/svg+xml,image/gif,image/bmp,image/tiff,image/x-tiff,image/heic,video/mp4,video/webm,video/ogg,video/quicktime'],
+            'file' => ['required', 'file', 'max:512000'],
         ]);
 
         $file = $request->file('file');
