@@ -37,7 +37,7 @@ class DatabaseSeeder extends Seeder
             ['name' => 'Michael Gough'],
             [
                 'role' => 'Logistics Director, GCC Region',
-                'avatar_url' => 'https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/michael-gouch.png',
+                'avatar_url' => 'https://ui-avatars.com/api/?name=Michael+Gough&background=0D8ABC&color=fff&size=200',
                 'headline' => 'It was a great experience!',
                 'body1' => 'Our platform connects logistics professionals, trade associations, and businesses. The events and forums make it easy to meet partners, learn about new opportunities, and build long-term relationships.',
                 'body2' => 'There is absolutely no doubt in my mind that this platform has enabled us to expand our logistics network significantly.',
@@ -48,7 +48,7 @@ class DatabaseSeeder extends Seeder
             ['name' => 'Bonnie Green'],
             [
                 'role' => 'Freight Forwarding CEO',
-                'avatar_url' => 'https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/bonnie-green.png',
+                'avatar_url' => 'https://ui-avatars.com/api/?name=Bonnie+Green&background=10B981&color=fff&size=200',
                 'headline' => 'A strong community for freight forwarders',
                 'body1' => 'Through the platform we discovered new partners across regions. The system makes it simple to register, connect and follow up after events.',
                 'body2' => 'Our team now has a clear view of who to work with in each corridor, which has reduced delays and improved customer satisfaction dramatically.',
@@ -59,7 +59,7 @@ class DatabaseSeeder extends Seeder
             ['name' => 'Lana Byrd'],
             [
                 'role' => 'CTO, Logistics Technology Firm',
-                'avatar_url' => 'https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/sofia-mcguire.png',
+                'avatar_url' => 'https://ui-avatars.com/api/?name=Lana+Byrd&background=F59E0B&color=fff&size=200',
                 'headline' => 'Digital tools that actually help operations',
                 'body1' => 'The registration flows, dashboards and communication tools are very intuitive. Our logistics teams adopted them quickly.',
                 'body2' => 'We now coordinate multi-country shipments with fewer mistakes, thanks to the shared platform and network.',
@@ -72,7 +72,7 @@ class DatabaseSeeder extends Seeder
             [
                 'title' => 'CEO & Logistics Strategist',
                 'bio' => "Leads the vision and partnerships connecting freight forwarders and trade leaders.",
-                'photo_url' => 'https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/bonnie-green.png',
+                'photo_url' => 'https://ui-avatars.com/api/?name=Bonnie+Green&background=10B981&color=fff&size=400',
                 'facebook_url' => '#',
                 'twitter_url' => '#',
             ],
@@ -83,7 +83,7 @@ class DatabaseSeeder extends Seeder
             [
                 'title' => 'CTO & Digital Platforms Lead',
                 'bio' => "Oversees digital tools, registrations, and member platforms.",
-                'photo_url' => 'https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/jese-leos.png',
+                'photo_url' => 'https://ui-avatars.com/api/?name=Jese+Leos&background=0D8ABC&color=fff&size=400',
                 'facebook_url' => '#',
                 'twitter_url' => '#',
             ],
@@ -94,7 +94,7 @@ class DatabaseSeeder extends Seeder
             [
                 'title' => 'Partnerships & Trade Relations',
                 'bio' => 'Builds relationships with freight forwarders, shippers, and government agencies.',
-                'photo_url' => 'https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/michael-gouch.png',
+                'photo_url' => 'https://ui-avatars.com/api/?name=Michael+Gough&background=7C3AED&color=fff&size=400',
                 'facebook_url' => '#',
                 'twitter_url' => '#',
             ],
@@ -105,7 +105,7 @@ class DatabaseSeeder extends Seeder
             [
                 'title' => 'Marketing & Community',
                 'bio' => 'Leads outreach, events, and communication with members and partners.',
-                'photo_url' => 'https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/sofia-mcguire.png',
+                'photo_url' => 'https://ui-avatars.com/api/?name=Lana+Byrd&background=F59E0B&color=fff&size=400',
                 'facebook_url' => '#',
                 'twitter_url' => '#',
             ],
@@ -113,15 +113,15 @@ class DatabaseSeeder extends Seeder
 
         // Member organizations
         $members = [
-            ['name' => 'Horse Cargo', 'logo_url' => 'https://flowbite.s3.amazonaws.com/blocks/marketing-ui/logo/horse-logo.png'],
-            ['name' => 'Xerin Logistics', 'logo_url' => 'https://flowbite.s3.amazonaws.com/blocks/marketing-ui/logo/erind-logo.png'],
-            ['name' => 'Twiga Star Cargo', 'logo_url' => 'https://flowbite.s3.amazonaws.com/blocks/marketing-ui/logo/flowbite-logo.png'],
-            ['name' => 'Moka Cargo', 'logo_url' => 'https://flowbite.s3.amazonaws.com/blocks/marketing-ui/logo/stripe-logo.png'],
-            ['name' => 'Global Express', 'logo_url' => 'https://flowbite.s3.amazonaws.com/blocks/marketing-ui/logo/mailchimp-logo.png'],
-            ['name' => 'Shamirik Air Cargo', 'logo_url' => 'https://flowbite.s3.amazonaws.com/blocks/marketing-ui/logo/slack-logo.png'],
-            ['name' => 'Antelope Sea Shipping', 'logo_url' => 'https://flowbite.s3.amazonaws.com/blocks/marketing-ui/logo/spotify-logo.png'],
-            ['name' => 'Timeless Shipping', 'logo_url' => 'https://flowbite.s3.amazonaws.com/blocks/marketing-ui/logo/tesla-logo.png'],
-            ['name' => 'Marmara Logistics', 'logo_url' => 'https://flowbite.s3.amazonaws.com/blocks/marketing-ui/logo/netflix-logo.png'],
+            ['name' => 'Horse Cargo', 'logo_url' => 'https://ui-avatars.com/api/?name=HC&background=DC2626&color=fff&size=200&bold=true'],
+            ['name' => 'Xerin Logistics', 'logo_url' => 'https://ui-avatars.com/api/?name=XL&background=2563EB&color=fff&size=200&bold=true'],
+            ['name' => 'Twiga Star Cargo', 'logo_url' => 'https://ui-avatars.com/api/?name=TSC&background=059669&color=fff&size=200&bold=true'],
+            ['name' => 'Moka Cargo', 'logo_url' => 'https://ui-avatars.com/api/?name=MC&background=7C3AED&color=fff&size=200&bold=true'],
+            ['name' => 'Global Express', 'logo_url' => 'https://ui-avatars.com/api/?name=GE&background=F59E0B&color=fff&size=200&bold=true'],
+            ['name' => 'Shamirik Air Cargo', 'logo_url' => 'https://ui-avatars.com/api/?name=SAC&background=06B6D4&color=fff&size=200&bold=true'],
+            ['name' => 'Antelope Sea Shipping', 'logo_url' => 'https://ui-avatars.com/api/?name=ASS&background=EC4899&color=fff&size=200&bold=true'],
+            ['name' => 'Timeless Shipping', 'logo_url' => 'https://ui-avatars.com/api/?name=TS&background=8B5CF6&color=fff&size=200&bold=true'],
+            ['name' => 'Marmara Logistics', 'logo_url' => 'https://ui-avatars.com/api/?name=ML&background=14B8A6&color=fff&size=200&bold=true'],
         ];
 
         foreach ($members as $member) {
