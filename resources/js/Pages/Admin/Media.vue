@@ -36,6 +36,7 @@ const openCreateModal = () => {
 const submitCreate = () => {
     mediaForm.post(route('admin.media.store'), {
         preserveScroll: true,
+        forceFormData: true,
         onSuccess: () => {
             createModalOpen.value = false;
             mediaForm.reset();

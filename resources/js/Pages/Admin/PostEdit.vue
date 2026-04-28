@@ -31,6 +31,7 @@ const isPublished = computed(() => !!props.post.published_at);
 const submit = () => {
     form.post(route('admin.posts.update', props.post.id), {
         preserveScroll: true,
+        forceFormData: true,
         onSuccess: () => {
             // stay on page; Inertia will refresh props
         },

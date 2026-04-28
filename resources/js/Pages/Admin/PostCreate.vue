@@ -21,6 +21,7 @@ const form = useForm({
 const submit = () => {
     form.post(route('admin.posts.store'), {
         preserveScroll: true,
+        forceFormData: true,
         onSuccess: () => {
             form.reset();
         },
